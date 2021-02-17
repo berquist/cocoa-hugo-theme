@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
+
+:root {
+    --base-font-family: 'Noto Serif', serif;
+    --header-font-family: 'Noto Sans', 'Helvetica Neue', 'Arial', sans-serif;
+    --literal-font-family: 'Fira Mono', 'Ubuntu Mono', 'Menlo', monospace;
+}
+
 .dark {
   color: #333 !important;
 }
@@ -55,7 +64,7 @@ body {
   width: 100%;
   min-height: 100%;
   font-weight: 400;
-  font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: var(--base-font-family);
   color: #111;
   line-height: 1.6;
   text-rendering: optimizeLegibility !important;
@@ -179,7 +188,7 @@ section.header .avatar {
 }
 section.header .name {
   font-size: 18px;
-  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: var(--header-font-family);
   letter-spacing: -0.005rem;
   font-weight: 700;
   color: #333;
@@ -188,7 +197,7 @@ section.header .name {
 }
 section.header h3.self-intro {
   font-size: 1em;
-  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: var(--header-font-family);
   letter-spacing: -0.005rem;
   font-weight: 700;
   color: #333;
@@ -200,7 +209,7 @@ section.header nav {
   font-size: 14px;
   margin-bottom: 16px;
   text-transform: uppercase;
-  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: var(--header-font-family);
 }
 section.header nav ul {
   list-style: none;
@@ -351,7 +360,7 @@ section.main .content .title-container {
 section.main .content .title-container .initials {
   display: none;
   font-size: 18px;
-  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: var(--header-font-family);
   letter-spacing: -0.005rem;
   font-weight: 700;
   color: #333;
@@ -371,7 +380,7 @@ section.main .content .title-container .initials a:hover {
 }
 section.main .content .page-heading {
   font-size: 18px;
-  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: var(--header-font-family);
   letter-spacing: -0.005rem;
   font-weight: 700;
   color: #333;
@@ -438,7 +447,7 @@ section.main .container.f04 .content {
 section.main .container.f04 .content .num {
   margin: 30px 0px 30px 0;
   font-weight: 200;
-  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: var(--header-font-family);
   font-size: 50px;
 }
 section.main .container.f04 .content .detail {
@@ -493,7 +502,7 @@ section.main .container .content .no-bullet {
 }
 section.main .container .content .no-bullet .date {
   font-size: 18px;
-  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: var(--header-font-family);
   letter-spacing: -0.005rem;
   font-weight: 700;
   color: #333;
@@ -576,7 +585,7 @@ section.main .content .markdown h4,
 section.main .content .markdown h5,
 section.main .content .markdown h6 {
   font-size: 18px;
-  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: var(--header-font-family);
   letter-spacing: -0.005rem;
   font-weight: 700;
   color: #333;
@@ -605,7 +614,7 @@ section.main .content .markdown h6 {
 section.main .content .markdown code,
 section.main .content .markdown pre,
 section.main .content p .literal {
-  font-family: 'Ubuntu Mono', 'Menlo', monospace;
+  font-family: var(--literal-font-family);
   font-size: 1rem;
   background-color: #f7f7f7;
 }
